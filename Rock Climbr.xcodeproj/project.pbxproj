@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -199,6 +199,7 @@
 				TargetAttributes = {
 					4433FD4E1CD7B08F00226859 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2E8CK47PJV;
 					};
 					4433FD661CD7B08F00226859 = {
 						CreatedOnToolsVersion = 7.3;
@@ -211,7 +212,7 @@
 				};
 			};
 			buildConfigurationList = 4433FD4A1CD7B08F00226859 /* Build configuration list for PBXProject "Rock Climbr" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -409,10 +410,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Rock Climbr/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.RocketScientist..Rock-Climbr";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RocketScientist.RockClimbr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -420,10 +424,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Collin Scott (2E8CK47PJV)";
 				INFOPLIST_FILE = "Rock Climbr/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.RocketScientist..Rock-Climbr";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RocketScientist.RockClimbr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -494,6 +501,7 @@
 				4433FD7D1CD7B09000226859 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4433FD7E1CD7B09000226859 /* Build configuration list for PBXNativeTarget "Rock ClimbrTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +510,7 @@
 				4433FD801CD7B09000226859 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4433FD811CD7B09000226859 /* Build configuration list for PBXNativeTarget "Rock ClimbrUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +519,7 @@
 				4433FD831CD7B09000226859 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
