@@ -7,6 +7,30 @@
         <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="Xq2-w3-jeF">
+            <objects>
+                <viewController id="5BV-vC-lpr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xnP-vk-FdJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="MmN-Te-AqH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0SQ-pJ-5al">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="8eI-L9-EYJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N8S-ot-Qur" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="-517"/>
+        </scene>
         <!--Main Menu-->
         <scene sceneID="tXr-a1-R10">
             <objects>
@@ -36,6 +60,13 @@
                                     <segue destination="gQM-GB-BPs" kind="presentation" modalTransitionStyle="crossDissolve" id="rDi-Jv-q5v"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjY-3T-WHu" userLabel="Leaderboard">
+                                <rect key="frame" x="88" y="486" width="108" height="75"/>
+                                <state key="normal" image="Leaderboard Button"/>
+                                <connections>
+                                    <segue destination="Du7-Fg-Buc" kind="presentation" modalTransitionStyle="crossDissolve" id="Lgy-gl-pm3"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bht-fN-dSg" userLabel="Credits">
                                 <rect key="frame" x="88" y="386" width="238" height="75"/>
                                 <state key="normal" image="Credits Button"/>
@@ -46,16 +77,12 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjY-3T-WHu" userLabel="Leaderboard">
-                                <rect key="frame" x="88" y="486" width="108" height="75"/>
-                                <state key="normal" image="Leaderboard Button"/>
-                                <connections>
-                                    <segue destination="Du7-Fg-Buc" kind="presentation" modalTransitionStyle="crossDissolve" id="Lgy-gl-pm3"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8L-iQ-fH9" userLabel="Start">
                                 <rect key="frame" x="88" y="286" width="238" height="75"/>
                                 <state key="normal" image="Start Button"/>
+                                <connections>
+                                    <segue destination="5BV-vC-lpr" kind="presentation" modalTransitionStyle="crossDissolve" id="YOi-6F-OJu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
